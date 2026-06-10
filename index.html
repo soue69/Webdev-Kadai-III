@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="lb/reset.css">
+        <link rel="stylesheet" href="lb/lbstyle.css">
+    </head>
+    <body>
+        <header>
+            <h1><img src="lb/lbLogo.png" alt="LIBRARYofALEXANDRIA"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="civilizations.html">CIVILIZATIONS</a></li>
+                    <li><a href="empires.html">EMPIRES</a></li>
+                    <li><a href="ideologies.html">IDEOLOGIES</a></li>
+                    <li><a href="religions.html">RELIGIONS</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="cards">
+            <main1>
+                <a href="civilizations.html"><article>
+                    <h2>CIVILIZATIONS[文明]</h2>
+                    <p>
+                        <img src="bunmei/lbcivilizations.jpg" alt="CIVILIZATIONS">
+                    </p>
+                </article></a>
+                <a href="ideologies.html"><article>
+                    <h2>IDEOLOGIES[思想・主義]</h2>
+                    <p>
+                        <img src="shugi/lbideologies.jpg">
+                    </p>
+                </article></a>
+            </main1>
+            <main2>
+                <a href="empires.html"><article>
+                    <h2>EMPIRES[帝国]</h2>
+                    <p>
+                        <img src="teikoku/lbempires.jpg" alt="EMPIRES">
+                    </p>
+                </article></a>
+                <a href="religions.html"><article>
+                    <h2>RELIGIONS[宗教]</h2>
+                    <p>
+                        <img src="shuukyou/lbreligions.jpg" alt="RELIGION">
+                    </p>
+                </article></a>
+            </main2>
+        </div>
+        <form action="" method="">
+            <h2>コメントする</h2>
+            <p>名前<input type="text" name="user_name"></p>
+            <label><input type="radio" name="gender" value="男性" checked="checked">男性</label>
+            <label><input type="radio" name="gender" value="女性" checked="checked">女性</label>
+            <label><input type="radio" name="gender" value="その他" checked="checked">その他</label>
+            <p>メールアドレス<input type="email" name="user_email"></p>
+            <p>コメント回数
+                <input type="checkbox" name="count" value="初めて">初めて
+                <input type="checkbox" name="count" value="2回目">2回目
+                <input type="checkbox" name="count" value="3回目以上">3回目以上</p>
+            <p>このブログをどこで知りましたか？
+                <select name="user_know">
+                    <option value="友人の紹介">友人の紹介</option>
+                    <option value="家族の紹介">家族の紹介</option>
+                    <option value="ネット検索">ネット検索</option>
+                    <option value="その他">その他</option>
+                </select>
+            </p>
+            <p>コメント</br><textarea name="comment"></textarea></p>
+            <p id="countView">現在: 0文字</p>
+            <p><input type="submit" value="送信"></p>
+        </form>
+        <footer>
+            <p><small>© 2026 LIBRARY OF ALEXANDRIA by SOU</small></p>
+        </footer>
+        <script src="lb/lbscript.js"></script>
+    </body>
+</html>

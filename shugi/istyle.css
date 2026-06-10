@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+    position: relative;
+    background-image: url('Socialism.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', "Arial", "sans-serif";
+}
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(20px) saturate(180%);
+    z-index: -1;
+}
+
+
+header {
+  background: rgba(20, 20, 28, 0.85);
+  backdrop-filter: blur(18px) saturate(160%);
+  border-bottom: 1px solid #00000000;
+  text-align: center;
+  width: 100%;
+  padding-top: 0;
+  margin-top: 0;
+  margin: 0 auto;
+  font-family: "ui-sans-serif", "system-ui", "Noto Sans JP", "sans-serif";
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header h1{
+  margin: 0;
+  padding: 0;
+}
+header h1 img {
+  text-align: center;
+  padding: 5px;
+  height: 120px;
+  width: 120px;
+  margin: 0 auto;
+  filter: drop-shadow(0 3px 10px rgba(0, 0, 0, 0.6));
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  padding: 0px;
+
+}
+header nav ul li {
+  margin: 0px;
+  list-style-type: none;
+}
+header nav a {
+  padding: 0.1rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  color: orangered;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+}
+header nav a:hover {
+  animation: blinkBorder 1.5s linear infinite;
+}
+@keyframes blinkBorder {
+  0%   { border-color: red; }
+  16%  { border-color: blue; }
+  33%  { border-color: green; }
+  50%  { border-color: purple; }
+  66%  { border-color: yellow; }
+  83%  { border-color: white; }
+  100% { border-color: orangered; }
+}
+
+
+div {
+  width:1240px;
+  margin: 0 auto 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  flex-basis: 700px;
+  border-radius: 16px;
+  padding: 62px 72px 32px 72px;
+  box-shadow: opx opx 8px rgba(0,0,0,0.16);
+  font-family: "ui-sans-serif", "system-ui", "Noto Sans JP", "sans-serif";
+  line-height: 1.8;
+}
+main article {
+  background: rgba(20, 20, 28, 0.85);
+  border: 0px solid;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  padding-bottom: 1.2rem;
+  margin-bottom: 3%;
+}
+main article h2, main article h3{
+  padding: 1.2rem 1.4rem 0;
+  letter-spacing: 0.02em;
+  color: orangered;
+}
+main article h2 {
+  font-size: clamp(1.3rem, 1vw + 1.2rem, 2rem);
+  line-height: 1.3;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  text-align: center;
+}
+main article p img {
+  margin: 1.2rem auto;
+  border-radius: 12px;
+  border: 0px solid;
+  display: block;
+  width: 80%;
+  max-width: 80%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  margin-top: 0%;
+}
+main article h3 {
+  margin-top: 1rem;
+  font-size: clamp(1.1rem, 0.9vw + 1rem, 1.5rem);
+  letter-spacing: 0.03em;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+main article p {
+  margin-top: 0.8rem;
+  font-size: 1rem;
+  color: white;
+  padding: 1.2rem 1.7rem 0;
+  letter-spacing: 0.02em;
+}
+main article a {
+  color: orangered;
+}
+.likeBox{
+  display: flex !important;
+  justify-content: flex-start !important;
+  width: auto !important;
+  font-size: 30px;
+  padding: 0.4rem 1.4rem 0;
+  margin-left: 88%;
+  margin-bottom: 0%;
+  color: #ffffff;
+}
+.likeCount{
+  font-size: 20px;
+  margin-top: 24%;
+}
+.likeBtn{
+  cursor: pointer;
+}
+.likeBtn.liked{
+  color: orangered;
+}
+
+aside{
+  flex-basis: 300px;
+  border-radius: 16px;
+  padding: 62px 72px 32px 72px;
+  box-shadow: opx opx 8px rgba(0,0,0,0.16);
+  font-family: "ui-sans-serif", "system-ui", "Noto Sans JP", "sans-serif";
+  line-height: 1.8;
+}
+aside nav {
+  background: rgba(20, 20, 28, 0.85);
+  border: 0px solid;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  padding-bottom: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+aside nav h2{
+  color: orangered;
+  text-align: center;
+}
+aside nav a{
+  color: #ffffff;
+  text-decoration: none;
+}
+aside nav a:hover{
+    color: orangered;
+}
+aside nav ul li{
+  list-style-type: none;
+}
+aside nav p{
+  color: orangered;
+  text-align: center;
+  font-style: italic;
+}
+
+footer{
+  text-align: center;
+  padding: 15px 10px 15px;
+  background: rgba(20, 20, 28, 0.85);
+  backdrop-filter: blur(18px) saturate(160%);
+  border-bottom: 1px solid #00000000;
+}
+footer p{
+  color: orangered;
+}
