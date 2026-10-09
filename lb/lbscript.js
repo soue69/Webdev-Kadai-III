@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
       countView.textContent = `現在: ${commentText.value.length}文字`;
     });
   }
-
+/*
   if (commentForm) {
     commentForm.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -39,3 +39,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+*/
